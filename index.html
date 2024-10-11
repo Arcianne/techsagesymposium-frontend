@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSageSymposium - Home</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <!-- AOS cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -20,8 +21,27 @@
 <body>
     <!-- nav bar -->
     <header>
-        <nav>
-            
+        <nav class="items container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="TechSageSymposium-icon">
+                    <h1>TechSageSymposium</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="action">
+                <i onclick="themeToggle()" class="fa-solid fa-moon" style="color: var(--text-color);"></i>
+                <button class="btn">Set Event</button>
+            </div>
         </nav>
     </header>
 
