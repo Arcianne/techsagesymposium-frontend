@@ -1,4 +1,1 @@
-function themeToggle() {
-    let element = document.body;
-    
-}
+console.log("Hello World")

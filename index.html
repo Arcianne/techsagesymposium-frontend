@@ -13,7 +13,7 @@
 
     <!-- global styles -->
     <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/theme/light.css">
+    <link rel="stylesheet" href="css/theme/light.css" id="theme">
 
     <!-- page style -->
     <link rel="stylesheet" href="css/style.css">
@@ -29,7 +29,7 @@
                 </a>
             </div>
             <div class="menu">
-                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-bars"></i> -->
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="events.html">Events</a></li>
@@ -37,10 +37,11 @@
                     <li><a href="blogs.html">Blogs</a></li>
                     <li><a href="faqs.html">FAQs</a></li>
                 </ul>
-            </div>
-            <div class="action">
-                <i onclick="themeToggle()" class="fa-solid fa-moon" style="color: var(--text-color);"></i>
-                <button class="btn">Set Event</button>
+
+                <div class="action">
+                    <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
+                    <button class="btn">Set Event</button>
+                </div>
             </div>
         </nav>
     </header>
@@ -62,6 +63,9 @@
 
     <!-- sweet alert script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- dark & light mode script -->
+    <script src="js/toggle-theme.js" type="module"></script>
     
     <!-- main script -->
     <script src="js/main.js"></script>

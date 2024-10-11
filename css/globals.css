@@ -16,7 +16,11 @@ body{
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: black;
+}
+
+ul, ol{
+    list-style-type: none;
 }
 
 header {
@@ -47,28 +51,33 @@ nav img {
 
 .logo h1{
     text-align: center;
-    color: var(--text-color);
+    color: var(--heading-color);
     font-size: 1.9rem;
     font-weight: 150;
 }
 
-.menu i{
-    display: none;
-    font-size: 2rem;
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
+/* .menu i{
+    display: none;
+    font-size: 2rem;
+} */
+
 .menu ul {
-    list-style-type: none;
     display: flex;
     gap: 3rem;
 }
 
-.menu ul li {
-    color: var(--text-color);
+.menu ul li a{
+    color: var(--heading-color);
     font-size: 1.5rem;
 }
 
-.action {
+.menu .action {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -77,11 +86,15 @@ nav img {
     cursor: pointer;
 }
 
+.menu .action i{
+    color: var(--heading-color);
+}
+
 .btn {
     font-size: 1.5rem;
     padding: 5px 20px 5px 20px;
     display: flex;
-    color: var(--text-color);
+    color: var(--heading-color);
     background-color: var(--background-color);
     border-radius: 10px;
     border: 1px solid #32EAFF;

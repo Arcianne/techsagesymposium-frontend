@@ -1,7 +1,8 @@
 :root{
-    --background-color: #0000;
+    --background-color: #00737e;
     --text-color: #0000;
-    --primary: #0000;
+    --heading-color: #62c472;
+    --primary: #fff;
     --secondary: #0000;
     --accent: #0000;
 }
