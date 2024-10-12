@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechSageSymposium - Blogs</title>
-    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
     <!-- AOS cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -13,12 +13,38 @@
 
     <!-- global styles -->
     <link rel="stylesheet" href="css/globals.css">
-    <link rel="stylesheet" href="css/theme/light.css">
+    <link rel="stylesheet" href="css/theme/light.css" id="theme">
 
     <!-- page style -->
     <link rel="stylesheet" href="css/pages/blogs.css">
 </head>
 <body>
+    <!-- nav bar -->
+    <header>
+        <nav class="items container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="TechSageSymposium-icon">
+                    <h1>TechSageSymposium</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+                <div class="action">
+                    <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
+                    <button class="btn">Set Event</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main>
         
     </main>
@@ -28,5 +54,8 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- dark & light mode script -->
+    <script src="js/toggle-theme.js" type="module"></script>
 </body>
 </html>
