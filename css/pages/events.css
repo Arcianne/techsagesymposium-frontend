@@ -1,0 +1,110 @@
+/*-----------------
+EVENT LIST STYLES 
+-----------------*/
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.filter select {
+    margin-top: 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--heading-color);
+    padding: .25rem 0.5rem;
+}
+
+.filter option {
+    color: var(--text-color);
+}
+
+.list-container {
+    margin-top: 1rem;
+    background-color: var(--primary);
+}
+
+.list-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.title h1{
+    font-size: 20px;
+}
+
+.title p {
+    display: inline;
+    margin-right: .5rem;
+    font-size: 12px;
+}
+
+.title span {
+    font-family:'Courier New';
+}
+
+
+
+/*-----------------
+EVENT VIEW STYLES 
+-----------------*/
+.details {
+    margin: 3rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    width: 40%;
+}
+
+.event-details h2,
+.about-speaker h2 {
+    color: var(--text-color);
+}
+
+.event-details h1,
+.subheading {
+    color: var(--heading-color);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.event-details p,
+.about-speaker p{
+    font-size: 1.5rem;
+    text-align: justify;
+    color: var(--text-color);
+}
+
+.heading p {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.event-cta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.event-details img,
+.about-speaker img {
+    width: 36rem;
+    border-radius: .5rem;
+}
+
+.subheading {
+    margin-top: 3rem;
+}
+
+.about-speaker {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+}
