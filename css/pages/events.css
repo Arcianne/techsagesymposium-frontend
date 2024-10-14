@@ -25,28 +25,45 @@ EVENT LIST STYLES
     background-color: var(--primary);
 }
 
-.list-details{
+.list-container .list {
+    border-top: 1px solid var(--text-color);
+}
+
+.list-container .list:last-child{
+    border-bottom: 1px solid var(--text-color);
+}
+
+.list .list-details{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5rem 0;
+    color: var(--text-color);
 }
 
-.title h1{
-    font-size: 20px;
+.list-details > div p:nth-child(2){
+    font-size: 1.25rem;
+    font-weight: 500;
 }
 
-.title p {
+.list-details .title h1{
+    font-size: 1.25rem;
+}
+
+
+.list-details .title p {
     display: inline;
     margin-right: .5rem;
-    font-size: 12px;
+    font-size: .75rem; 
 }
 
-.title span {
+.list-details > div:first-child p:nth-child(2){
+    font-size: .75rem;
+}
+
+.list-details .title span {
     font-family:'Courier New';
 }
-
-
 
 /*-----------------
 EVENT VIEW STYLES 
