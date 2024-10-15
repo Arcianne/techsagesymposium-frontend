@@ -23,7 +23,8 @@ ul, ol{
     list-style-type: none;
 }
 
-header {
+header,
+footer {
     background-color: var(--primary);
 }
 
@@ -33,6 +34,9 @@ header {
     margin: 0 auto;
 }
 
+/*-----------------
+HEADER STYLES 
+-----------------*/
 .items {
     display: flex;
     align-items: center;
@@ -56,16 +60,12 @@ nav img {
     font-weight: 150;
 }
 
+header 
 .menu {
     display: flex;
     align-items: center;
     gap: 2rem;
 }
-
-/* .menu i{
-    display: none;
-    font-size: 2rem;
-} */
 
 .menu ul {
     display: flex;
@@ -75,6 +75,10 @@ nav img {
 .menu ul li a{
     color: var(--heading-color);
     font-size: 1.5rem;
+}
+
+.menu ul li a:hover {
+    color: var(--accent);
 }
 
 .menu .action {
@@ -99,5 +103,58 @@ nav img {
     border-radius: 10px;
     border: 1px solid #32EAFF;
     cursor: pointer;
+}
+
+
+/*-----------------
+FOOTER STYLES 
+-----------------*/
+footer {
+    margin-top: 2.5rem;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem 0;
+}
+
+.footer-nav h1{
+    font-size: 1.25rem;
+    color: var(--heading-color);
+}
+
+.footer-nav
+.info {
+    max-width: 20%;
+    text-align: justify;
+}
+
+.footer-nav
+.info p {
+    color: var(--text-color);
+}
+
+.footer-nav 
+.link ul li a {
+    color: var(--text-color);
+}
+
+.footer-nav
+.contribute ul li {
+    color: var(--text-color);
+}
+
+.footer-nav
+.sponsor img {
+    max-width: 1.5rem;
+    gap: .75rem;
+}
+
+.footer-nav
+.socials i {
+    font-size: 1.5rem;
+    gap: .75rem;
+    color: var(--heading-color);
 }
 

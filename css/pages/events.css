@@ -11,6 +11,7 @@ EVENT LIST STYLES
     margin-top: 1rem;
     font-size: 20px;
     border-radius: 5px;
+    border-color: var(--heading-color);
     background-color: var(--background-color);
     color: var(--heading-color);
     padding: .25rem 0.5rem;
@@ -26,11 +27,11 @@ EVENT LIST STYLES
 }
 
 .list-container .list {
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid var(--accent);
 }
 
 .list-container .list:last-child{
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--accent);
 }
 
 .list .list-details{
@@ -48,6 +49,8 @@ EVENT LIST STYLES
 
 .list-details .title h1{
     font-size: 1.25rem;
+    color: var(--heading-color);
+    font-weight: 300;
 }
 
 
