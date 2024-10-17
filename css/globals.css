@@ -124,37 +124,31 @@ footer {
     color: var(--heading-color);
 }
 
-.footer-nav
-.info {
+.footer-nav .info {
     max-width: 20%;
     text-align: justify;
 }
 
-.footer-nav
-.info p {
+.footer-nav .info p {
     color: var(--text-color);
 }
 
-.footer-nav 
-.link ul li a {
+.footer-nav  .link ul li a {
     color: var(--text-color);
 }
 
-.footer-nav
-.contribute ul li {
+.footer-nav .contribute ul li a{
     color: var(--text-color);
 }
 
-.footer-nav
-.sponsor img {
+.footer-nav .sponsor img {
+    margin-right: .25rem;
     max-width: 1.5rem;
-    gap: .75rem;
 }
 
-.footer-nav
-.socials i {
+.footer-nav .socials i {
+    margin-right: .25rem;
     font-size: 1.5rem;
-    gap: .75rem;
     color: var(--heading-color);
 }
 
