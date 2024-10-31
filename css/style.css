@@ -2,6 +2,7 @@
     position: relative;
     display: inline-block;
 }
+
 .home img {
     max-width: 100%;
     display: block;
@@ -171,3 +172,76 @@
     font-size: 1.25rem;
 }
 
+/* #featured-events {
+    overflow: hidden;
+}
+
+.events {
+    display: inline-flex;
+    position: relative;
+    right: -100%;
+    white-space: nowrap;
+    animation: 10s slide infinite linear;
+    gap: .5rem;
+}
+
+.events .event-slide {
+    height: 15rem;
+    background-size: cover;
+    aspect-ratio: 16/9;
+} */
+
+/* .events .event-slide:nth-child(1) {
+    background-image: url('../assets/event-author.png');
+}
+
+.events .event-slide:nth-child(2) {
+    background-image: url('../assets/home-empowering.png');
+}
+
+.events .event-slide:nth-child(3) {
+    background-image: url('../assets/home-future.png');
+} */
+
+.newsletter {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    width: 40rem;
+    background-color: var(--primary);
+    border-radius: .5rem;
+}
+
+.newsletter p{
+    color: var(--text-color);
+    font-size: 1.25rem;
+}
+
+.newsletter .email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter .email input {
+    margin-top: 1rem;
+    padding: .25rem .5rem;
+    height: 2.47rem;
+    width: 15rem;
+    font-size: 1rem;
+    border-radius: 0;
+    border: 1px solid var(--heading-color);
+    background-color: var(--background-color);
+    color: var(--heading-color);
+}
+
+.newsletter .email input::placeholder {
+    color: var(--heading-color);
+}
+
+.newsletter .email button {
+    margin-top: 1rem;
+    border-radius: 0;
+}

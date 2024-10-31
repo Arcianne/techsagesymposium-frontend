@@ -72,7 +72,7 @@ EVENT LIST STYLES
 EVENT VIEW STYLES 
 -----------------*/
 .details {
-    margin: 3rem 0 2rem 0;
+    margin: 8rem 0 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
