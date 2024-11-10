@@ -13,7 +13,7 @@ async function fetchAllEvents() {
                         <p><span>#</span>web-dev</p>
                         <p><span>#</span>computer-science</p>
                     </div>
-                    <div class="attendance">
+                    <div class="attendees">
                         <p>No. of Attendees</p>
                         <p>${event.attendees}</p>
                     </div>
