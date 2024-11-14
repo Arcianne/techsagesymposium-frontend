@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSageSymposium - Home</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- global styles -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/theme/light.css" id="theme">
+
+    <!-- page style -->
+    <link rel="stylesheet" href="css/pages/set-event.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <nav class="items container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="TechSageSymposium-icon">
+                    <h1>TechSageSymposium</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+                <div class="action">
+                    <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
+                    <button class="btn">Set Event</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="form-title">
+                <h1>Register your Event</h1>
+                <h2>Please ensure all event details are accurately filled out; we will notify you promptly if your event submission is accepted</h2>
+            </div>
+            
+            <form>
+                <div class="set-event">
+                    <div class="registration">
+                        <div>
+                            <label for="title">Title of the Event </label>
+                            <input id="title" name="title" type="text" placeholder="E.g Innovate Tech: Future Conversations" required>
+                        </div>
+
+                        <div>
+                            <label for="mode">Mode of Delivery </label>
+                            <input id="mode" name="mode" type="text" placeholder="E.g Seminar/Webinar" required>
+                        </div>
+
+                        <div>
+                            <label for="location">Location </label>
+                            <input id="location" name="location" type="text" placeholder="E.g Tarlac City" required>
+                        </div>
+
+                        <div>
+                            <label for="venue">Venue </label>
+                            <input id="venue" name="venue" type="text" placeholder="E.g TSU San Isidro AVR" required>
+                        </div>
+
+                        <div>
+                            <label for="max-number">Maximum Number of Attendees </label>
+                            <input id="max-number" name="max-number" type="text" placeholder="E.g 300" required>
+                        </div>
+
+                        <div>
+                            <label for="duration">Duration </label>
+                            <input id="duration" name="duration" type="text" placeholder="E.g 1.5 hours" required>
+                        </div>
+
+                        <div>
+                            <label for="date">Date of the Event </label>
+                            <input id="date" name="date" type="text" placeholder="E.g December 01, 2024" required>
+                        </div>
+
+                        <div>
+                            <label for="speaker-name">Speaker's Full Name: </label>
+                            <input id="speaker-name" type="text" name="speaker-name" placeholder="E.g. Juan Dela Cruz" required>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="registration-details">
+                        <div>
+                            <label for="speaker-information">About the Speaker </label>
+                            <textarea id="speaker-information" name="speaker-information" rows="3" cols="30" placeholder="Speaker's Information"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="event-details">Details of the Event </label>
+                            <textarea id="event-details" name="event-details" rows="3" cols="30" placeholder="Contents of the Event"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="tags">Tags </label>
+                            <textarea id="tags" name="tags" rows="3" cols="30" placeholder="E.g. webdev, computer-science, software-engineer"></textarea>
+                        </div>
+
+                        <p>How can we Reach you?</p>
+
+                        <div>
+                            <label for="name">Name: </label>
+                            <input id="name" type="text" name="name" placeholder="E.g. Juan Dela Cruz" required>
+                        </div>
+
+                        <div>
+                            <label id="Email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="E.g. juandelacruz123@gmail.com" required>
+                        </div>
+
+                        <div>
+                            <label id="contact">Contact Number: </label>
+                            <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <div class="button">
+                        <input class="btn" type="submit" value="Submit"/>
+                    </div>
+
+                    <div>
+                        <a href="events.html">
+                            <button class="btn" type="button" onclick>Cancel</button>
+                        </a>
+                    </div>
+                </div>       
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav container">
+            <div class="info">
+                <h1>TechSageSymposium</h1>
+                <p>TechSageSymposium delivers expert-led tech seminars and webinars, empowering professionals with up-to-date knowledge and skills.</p>
+            </div>
+            <div class="link">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="contribute">
+                <h1>Contribute to this project</h1>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend" target="_blank">
+                            Contribute
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend/issues" target="_blank">
+                            Issues & Feature Request
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="sponsor">
+                <h1>Thanks to our sponsors</h1>
+                <img src="assets/zoom-logo.png" alt="zoom">
+                <img src="assets/globe-logo.png" alt="globe telecom">
+                <img src="assets/logo-cisco.png" alt="cisco">
+            </div>
+            <div class="socials">
+                <h1>Socials</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dark & light mode script -->
+    <script src="js/toggle-theme.js" type="module"></script>
+</body>
+</html>

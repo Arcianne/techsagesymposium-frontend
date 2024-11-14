@@ -39,7 +39,9 @@
                 </ul>
                 <div class="action">
                     <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
-                    <button class="btn">Set Event</button>
+                    <a href="set-event.html">
+                        <button class="btn">Set Event</button>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -65,79 +67,10 @@
                 <option value="software-engineer">Software Engineering</option>
             </select>
         </div>
-        <div class="list-container">
-            <div class="list">
-                <div class="container list-details">
-                    <div class="title">
-                        <h1>Learn Modern Web Development</h1>
-                        <p><span>#</span>web-dev</p>
-                        <p><span>#</span>computer-science</p>
-                    </div>
-                    <div class="attendance">
-                        <p>No. of Attendees</p>
-                        <p>302</p>
-                    </div>
-                    <div class="speaker">
-                        <p>Speaker</p>
-                        <p>Mika Soriano</p>
-                    </div>
-                    <div class="location">
-                        <p>Location</p>
-                        <p>Tarlac City</p>
-                    </div>
-                    <div class="venue">
-                        <p>Venue</p>
-                        <p>Kaisa Hall</p>
-                    </div>
-                    <div class="duration">
-                        <p>Duration</p>
-                        <p>1.5 hours</p>
-                    </div>
-                    <div class="date">
-                        <p>Date</p>
-                        <p>January 05, 2025</p>
-                    </div>
-                    <a href="event.html">
-                        <button class="btn">View</button>
-                    </a>
-                </div>
-            </div>
-            <div class="list">
-                <div class="container list-details">
-                    <div class="title">
-                        <h1>Learn Modern Web Development</h1>
-                        <p><span>#</span>web-dev</p>
-                        <p><span>#</span>computer-science</p>
-                    </div>
-                    <div class="attendance">
-                        <p>No. of Attendees</p>
-                        <p>302</p>
-                    </div>
-                    <div class="speaker">
-                        <p>Speaker</p>
-                        <p>Mika Soriano</p>
-                    </div>
-                    <div class="location">
-                        <p>Location</p>
-                        <p>Tarlac City</p>
-                    </div>
-                    <div class="venue">
-                        <p>Venue</p>
-                        <p>Kaisa Hall</p>
-                    </div>
-                    <div class="duration">
-                        <p>Duration</p>
-                        <p>1.5 hours</p>
-                    </div>
-                    <div class="date">
-                        <p>Date</p>
-                        <p>January 05, 2025</p>
-                    </div>
-                    <a href="event.html">
-                        <button class="btn">View</button>
-                    </a>
-                </div>
-            </div>
+
+        <!-- list of events -->
+        <div class="list-container" id="list-container">
+            <!-- Content is auto-generated (Dynamic) -->
         </div>    
     </main>
 
@@ -156,9 +89,15 @@
     <!-- sweet alert script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- dark & light mode script -->
     <script src="js/toggle-theme.js" type="module"></script>
-    
+
+    <!-- script for api request -->
+    <script src="js/api.js"></script>
+
     <!-- main script -->
     <script src="js/main.js"></script>
 </body>
