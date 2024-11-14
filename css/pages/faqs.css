@@ -18,10 +18,10 @@ section h1 {
 .search-container input {
   width: 100%;
   padding: 0.8rem 2rem;
-  border: 1px solid var(--background-color);
+  border: 1px solid var(--input-placeholder);
   border-radius: 8px;
   font-size: 1rem;
-  background: var(--background-color);
+  background: var(--input-background);
   color: var(--text-color);
 }
 
@@ -70,7 +70,7 @@ section h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--primary);
+  color: var(--accent);
 }
 
 .faq-item.active .faq-question i {
