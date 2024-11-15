@@ -51,6 +51,7 @@
             <h1 class="faq-text">Frequently Asked Questions</h1>
             <div class="search-container">
                 <input type="text" placeholder="Search for a Question">
+                <i class="fas fa-search"></i>
             </div>
 
             <div class="faq-list">
@@ -114,6 +115,14 @@
             </div>
         </section>
     </main>
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.querySelector('.faq-question').addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
