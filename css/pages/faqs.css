@@ -42,7 +42,7 @@ section h1 {
 }
 
 .faq-item {
-  background: var(--background-color);
+  background: var(--input-background);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -101,7 +101,7 @@ section h1 {
 }
 
 .contact-card {
-  background: var(--background-color);
+  background: var(--input-background);
   padding: 2rem;
   border-radius: 8px;
   display: flex;
@@ -113,7 +113,7 @@ section h1 {
 
 .contact-card i {
   font-size: 2rem;
-  color: var(--primary);
+  color: var(--heading-color);
 }
 
 .contact-info h3 {
