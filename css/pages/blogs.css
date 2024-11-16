@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    
+}
+ul{
+    list-style: none;
+}
+.recent-blog{
+ padding: 50px;   
+ color: #023c7d;
+ font-size: 20px;
+ font-weight: 500;
+ display: flex;
+ align-items: center;
+
+}
+.recent-blog-container{
+    padding: 50px;
+    width:550px;
+    height:300px;
+    margin:20px; 
+    border: 2px solid pink;
+    background-color: pink;
+    display: flex;
+    align-items: left;
+
+}
+.recent-blog-title{
+padding: 10px;    
+}
+.recent-blog-texts{
+    align-items: justify;
+    text-align: justify;
+    padding: 10px;    
+    
+}
