@@ -61,7 +61,9 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        Tech Conference is a premier event bringing together technology enthusiasts, professionals, and industry leaders to discuss the latest trends, innovations, and advancements in the tech industry. The conference includes keynote speeches, panel discussions, workshops, and networking opportunities.
+                        Tech Conference is a premier event bringing together technology enthusiasts, professionals, 
+                        and industry leaders to discuss the latest trends, innovations, and advancements in the tech industry. The conference includes keynote speeches, panel discussions, 
+                        workshops, and networking opportunities.
                     </div>
                 </div>
 
@@ -71,7 +73,8 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        Registration can be completed through our website. Click on the 'Set Event' button and follow the registration process.
+                        Registration can be completed through our website. 
+                        Click on the 'Set Event' button and follow the registration process.
                     </div>
                 </div>
                 
@@ -81,7 +84,8 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        Yes, we offer virtual attendance options for those who cannot attend in person. Virtual attendees will have access to live streams of all sessions and online networking opportunities.
+                        Yes, we offer virtual attendance options for those who cannot attend in person. 
+                        Virtual attendees will have access to live streams of all sessions and online networking opportunities.
                     </div>
                 </div>
 
@@ -91,10 +95,63 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <div class="faq-answer">
-                        To become a speaker or sponsor, just click the 'Set Event' button and follow the registration process. To become a sponsor, please contact our team through the email provided below.
+                        To become a speaker or sponsor, just click the 'Set Event' button and follow the registration process. 
+                        To become a sponsor, please contact our team through the email provided below.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What topics will be covered?</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        The conference will cover a wide range of topics, including artificial intelligence, cloud computing, cybersecurity, software development, data science, and more. 
+                        Check our [Agenda] for the full list of topics and speakers.     
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>How do I contact support?</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        For any inquiries, please reach out to our support team at TechSageSymposium@gmail.com or call (045) 491-2416. We're here to help!     
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>Can I register on the day of the event?</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        On-site registration may be available, but we recommend registering in advance to secure your spot and avoid higher last-minute fees.     
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>Who should attend the conference?</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        The event is designed for tech enthusiasts, developers, entrepreneurs, IT professionals, students, and anyone passionate about technology and innovation.     
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <p>What are the system requirements for virtual participation?</p>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You’ll need a device with a stable internet connection, a modern web browser, and preferably a webcam and microphone for interactive sessions.                    
                     </div>
                 </div>
             </div>
+            
 
             <div class="contact-container">
                 <div class="contact-card">
@@ -116,13 +173,36 @@
         </section>
     </main>
     <script>
+    
         const faqItems = document.querySelectorAll('.faq-item');
         faqItems.forEach(item => {
             item.querySelector('.faq-question').addEventListener('click', () => {
                 item.classList.toggle('active');
             });
         });
+    
+        const searchInput = document.querySelector('.search-container input'); 
+    
+        searchInput.addEventListener('input', () => {
+            const searchQuery = searchInput.value.toLowerCase(); 
+    
+            if (searchQuery === "") {
+                faqItems.forEach(item => item.style.display = 'block'); 
+                return;
+            }
+    
+            faqItems.forEach(item => {
+                const questionText = item.querySelector('.faq-question p').textContent.toLowerCase(); 
+                const answerText = item.querySelector('.faq-answer').textContent.toLowerCase(); 
+                if (questionText.includes(searchQuery) || answerText.includes(searchQuery)) {
+                    item.style.display = 'block'; 
+                } else {
+                    item.style.display = 'none'; 
+                }
+            });
+        });
     </script>
+    
 
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
