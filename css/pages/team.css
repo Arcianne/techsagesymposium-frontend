@@ -1,0 +1,83 @@
+body {
+    background: var(--background-color);
+}
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+.team-section h1 {
+    margin-bottom: 10px;
+    font-size: 4.0rem;
+    color: var(--heading-color);
+}
+.quote{
+    margin-bottom: 45px;
+    font-size: 2.0rem;
+    color: var(--heading-color);
+}
+.team-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    gap: 35px;
+}
+.team-member {
+    background:var(--input-background);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 460px;
+    padding: 30px;
+    text-align: left; 
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.team-member img {
+    border-radius: 5%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    align-self: flex-start; 
+}
+.team-member h3 {
+    font-size: 35px;
+    margin: 0;
+    color:var( --text-color);
+}
+.team-member .info {
+    color:var( --text-color);
+    font-size: 20px;
+    margin:  0;
+}
+.team-member .position{
+    color:var(--accent);
+    font-size: 28px;
+    margin: 0;
+    align-self: flex-end;
+}
+.socials-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.socials-icons .fa-brands{
+    color:var(--heading-color);
+    font-size: 35px;
+    transition: transform 0.3s ease;
+}
+.socials-icons .fa-brands:hover{
+    transform: scale(1.2);
+}
+.Meeting{
+    text-align: center;
+}
+.Meeting img{
+    width: 1450px;
+    height:550px;
+    border-radius: 12px;    
+}
