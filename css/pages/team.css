@@ -55,7 +55,7 @@ body {
     margin:  0;
 }
 .team-member .position{
-    color:var(--accent);
+    color:var(--primary);
     font-size: 28px;
     margin: 0;
     align-self: flex-end;
