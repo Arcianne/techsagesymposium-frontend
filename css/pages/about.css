@@ -1,12 +1,12 @@
 .about-us {
     padding: 50px 20px;
-    background-color: #f5faff;
+    background-color: var(--background-color);
     text-align: center;
 }
 
 .about-us h2 {
     font-size: 2.5rem;
-    color: #003366;
+    color: var(--heading-color);
     margin-bottom: 30px;
 }
 
@@ -29,28 +29,34 @@
     text-align: left;
     line-height: 1.6;
     font-size: 1rem;
-    color: var(--text-color)
-    font-weight: 500;
+    color: var(--text-color);
+    text-align: justify;
 }
 
 .about-text p {
     margin-bottom: 20px;
 }
 
-.mission-container, .vision-container, .values-container {
+.mission-container, 
+.vision-container, 
+.values-container {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
 }
 
-.mission-content, .vision-content, .values-content {
+.mission-content, 
+.vision-content, 
+.values-content {
     flex: 1;
     color: #DFFFFE;
     background-color: #003366;
     height: 400px;
 }
 
-.mission-content h2, .vision-content h2, .values-content h2 {
+.mission-content h2, 
+.vision-content h2, 
+.values-content h2 {
     display: flex;
     justify-content: center;
     font-size: 2rem;
@@ -58,7 +64,9 @@
     padding: 100px 50px 10px;
 }
 
-.mission-content p, .vision-content p, .values-content p {
+.mission-content p, 
+.vision-content p, 
+.values-content p {
     display: flex;
     justify-content: center;
     line-height: 1.6;
@@ -67,7 +75,9 @@
     padding: 10px 50px 100px;
 }
 
-.mission-image, .vision-image, .values-image {
+.mission-image, 
+.vision-image, 
+.values-image {
     flex: 1; 
     display: flex;
     justify-content: center;
@@ -78,7 +88,9 @@
     width: auto;
 }
 
-.mission-image img, .vision-image img, .values-image img {
+.mission-image img, 
+.vision-image img, 
+.values-image img {
     height: 23rem;
     width: 23rem;
 }
