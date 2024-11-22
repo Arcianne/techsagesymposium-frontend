@@ -47,6 +47,7 @@
     margin: 3rem 0 2rem 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .first h1 {
@@ -103,6 +104,8 @@
     width: 30rem;
     height: 18rem;
     border-radius: .5rem;
+    display: flex;
+    align-items: center;
 }
 
 .third {
