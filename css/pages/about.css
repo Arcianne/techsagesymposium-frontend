@@ -29,11 +29,56 @@
     text-align: left;
     line-height: 1.6;
     font-size: 1rem;
-    color: #333;
+    color: var(--text-color)
     font-weight: 500;
 }
 
 .about-text p {
     margin-bottom: 20px;
-    font-weight: 500;
+}
+
+.mission-container, .vision-container, .values-container {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.mission-content, .vision-content, .values-content {
+    flex: 1;
+    color: #DFFFFE;
+    background-color: #003366;
+    height: 400px;
+}
+
+.mission-content h2, .vision-content h2, .values-content h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color:#DFFFFE;
+    padding: 100px 50px 10px;
+}
+
+.mission-content p, .vision-content p, .values-content p {
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px 50px 100px;
+}
+
+.mission-image, .vision-image, .values-image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-height: 100%;
+    max-width: 100%;
+    height: 100px;
+    width: auto;
+}
+
+.mission-image img, .vision-image img, .values-image img {
+    height: 23rem;
+    width: 23rem;
 }
