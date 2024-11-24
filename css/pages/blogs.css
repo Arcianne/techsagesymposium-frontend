@@ -6,7 +6,6 @@ img {
     padding: 20px;  
     color: var(--heading-color);
     font-size: 21px;
-    gap: 10px;
   }
   
   .recent-blog-container {
@@ -51,16 +50,16 @@ img {
   }
   
   .blog-section {
-    font-size: 21px;
-    padding: 20px;
-    text-align: left;
+    padding: 20px;  
     color: var(--heading-color);
+    font-size: 21px;
   }
   
   .blog-grid {
     display: grid;
     grid-template-columns: 21% 21% 21% 21%;
     column-gap: 21px;
+    padding: 10px;
   }
   
   .more-blogs-container {
@@ -74,8 +73,8 @@ img {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    margin-top: 10px;
-  }
+
+   }
   
   .recent-blog-container:hover {
     cursor: pointer;
