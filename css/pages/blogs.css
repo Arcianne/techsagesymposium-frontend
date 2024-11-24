@@ -11,10 +11,10 @@ img {
   
   .recent-blog-container {
     width: 1045px;
-    height: 656px;
+    height: 765px;
     border: 1.5px solid black;
     background-color: var(--primary);
-    font-size: 17px;
+    font-size: 18px;
     color: var(--text-color);
     text-align: justify;
     margin-left: 20px;
@@ -34,7 +34,7 @@ img {
     flex-direction: column;
     gap: 8px;
     padding: 20px;
-    
+    position: absolute;
   }
   
   .featured-container {
@@ -43,7 +43,7 @@ img {
     text-align: center;
     border: 1.5px solid black;
     background-color: var(--primary);
-    height: 353px;
+    height: 313px;
     width: 427px;
     margin-left: 20px;
     margin-right: 20px;
@@ -59,13 +59,13 @@ img {
   
   .blog-grid {
     display: grid;
-    grid-template-columns: 25.8% 25.8% 25.8% 25.8%;
-    column-gap: 25.8px;
+    grid-template-columns: 21% 21% 21% 21%;
+    column-gap: 21px;
   }
   
   .more-blogs-container {
     width: 352px;
-    height: 223px;
+    height: 233px;
     border: 1.5px solid black;
     background-color: var(--primary);
     font-size: 11px;
@@ -74,6 +74,7 @@ img {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    margin-top: 10px;
   }
   
   .recent-blog-container:hover {
@@ -101,12 +102,12 @@ img {
   }
   
   
-  @media (max-width: 1068px) {
+  @media (max-width: 768px) {
     .blog-grid {
         grid-template-columns: 100%; 
         row-gap: 20px; 
     }
-  
+
     .recent-blog-container,  
     .more-blogs-container, 
     .featured-container {
@@ -114,4 +115,43 @@ img {
         margin-left: 0; 
         margin-right: 0; 
     }
-  }
+
+    .recent-blog {
+        font-size: 18px;
+    }
+
+    .featured-blogs {
+        font-size: 18px; 
+    }
+
+    .blog-section {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-grid {
+        grid-template-columns: 100%; 
+        row-gap: 15px; 
+    }
+
+    .recent-blog-container,  
+    .more-blogs-container, 
+    .featured-container {
+        width: 100%; 
+        margin-left: 0; 
+        margin-right: 0; 
+    }
+
+    .recent-blog {
+        font-size: 16px; 
+    }
+
+    .featured-blogs {
+        font-size: 16px; 
+    }
+
+    .blog-section {
+        font-size: 16px; 
+    }
+}
