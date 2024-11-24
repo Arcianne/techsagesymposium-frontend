@@ -49,7 +49,7 @@
                 <h2>Please ensure all event details are accurately filled out; we will notify you promptly if your event submission is accepted</h2>
             </div>
             
-            <form>
+            <form onsubmit="setEvent(event)">
                 <div class="set-event">
                     <div class="registration">
                         <div>
@@ -191,7 +191,16 @@
         </div>
     </footer>
 
+    <!-- sweet alert script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- dark & light mode script -->
     <script src="js/toggle-theme.js" type="module"></script>
+
+    <!-- set-event script -->
+    <script src="js/set-event-form.js"></script>
 </body>
 </html>

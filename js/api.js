@@ -1,6 +1,6 @@
-async function fetchAllEvents() {
+async function fetchApprovedEvents() {
     try {
-        const response = await axios.get("http://localhost:8000/api/v1/events");
+        const response = await axios.get("http://localhost:8000/api/v1/events/pending-status/true");
         const listContainer = document.getElementById("list-container")
         console.log(response.data.data)
         const dataSource = response.data.data
@@ -10,8 +10,8 @@ async function fetchAllEvents() {
                 <div class="container list-details">
                     <div class="title">
                         <h1>${event.title}</h1>
-                        <p><span>#</span>web-dev</p>
-                        <p><span>#</span>computer-science</p>
+                        <p><span>#</span>${event.tags}</p>
+                        <p><span>#</span>${event.tags}</p>
                     </div>
                     <div class="attendees">
                         <p>No. of Attendees</p>
@@ -51,7 +51,5 @@ async function fetchAllEvents() {
     }
 }
 
-    
-
-fetchAllEvents()
+fetchApprovedEvents()
 
