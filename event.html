@@ -55,8 +55,29 @@
         <div class="base">
             <div class="inner">
                 <h1 class="title">Register for the Learn Modern Web Development Event</h1>
+                <!-- inputs here-->
+                <form action="">
+                    <div class="registration">
+                        <div>
+                            <label for="name">Name: </label>
+                            <input id="name" type="text" name="name" placeholder="E.g. Juan Dela Cruz" required>
+                        </div>
 
-                <!-- inputs here, style nasa line 80 sa events.css  -->
+                        <div>
+                            <label id="Email">Email: </label>
+                            <input type="email" id="email" name="email" placeholder="E.g. juandelacruz123@gmail.com" required>
+                        </div>
+
+                        <div>
+                            <label id="contact">Contact Number: </label>
+                            <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <input class="btn" type="submit" value="Submit"/>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
