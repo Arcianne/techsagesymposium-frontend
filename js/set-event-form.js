@@ -26,7 +26,12 @@ function setEvent(event) {
                 is_pending: false
             }
         });
-        console.log("success")
+
+        Swal.fire({
+            title: "Submission Successful!",
+            text: "Your event has been successfully submitted and is now available in the admin dashboard.",
+            icon: "success",
+        });
     } catch (error) {
         console.log(error)
     }

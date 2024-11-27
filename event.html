@@ -8,6 +8,10 @@
     <!-- AOS cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- LDCV styles & script -->
+    <link rel="stylesheet" href="lib/ldcv/index.min.css"/>
+    <script src="lib/ldcv/index.min.js"></script>
+
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -47,6 +51,16 @@
         </nav>
     </header>
 
+    <div id="event-registration-modal" class="ldcv">
+        <div class="base">
+            <div class="inner">
+                <h1 class="title">Register for the Learn Modern Web Development Event</h1>
+
+                <!-- inputs here, style nasa line 80 sa events.css  -->
+            </div>
+        </div>
+    </div>
+
     <main class="container">
         <section class="event-details">
             <div class="details">
@@ -56,7 +70,7 @@
                     <p>@Kaisa Hall, Tarlac City</p>
                     <p>January 05, 2025 at 10:00 AM</p>
                     <div class="event-cta">
-                        <button class="btn">Join Now!</button>
+                        <button class="btn" onclick="ldcv.toggle()">Join Now!</button>
                         <button class="btn">Generate Banner</button>
                     </div>
                 </div>
@@ -135,6 +149,9 @@
 
     <!-- dark & light mode script -->
     <script src="js/toggle-theme.js" type="module"></script>
+
+    <!-- script for page-specific event  -->
+    <script src="js/event.js"></script>
 
     <!-- main script -->
     <script src="js/main.js"></script>

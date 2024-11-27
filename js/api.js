@@ -35,7 +35,7 @@ async function fetchApprovedEvents() {
                     </div>
                     <div class="date">
                         <p>Date</p>
-                        <p>${event.date}</p>
+                        <p>${moment(event.date).format('MM/DD/YYYY')}</p>
                     </div>
                     <a href="event.html">
                         <button class="btn">View</button>

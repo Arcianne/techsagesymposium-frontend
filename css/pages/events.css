@@ -71,6 +71,14 @@ EVENT LIST STYLES
     font-family:'Courier New';
 }
 
+/*------------------------------
+EVENT REGISTRATION MODAL STYLES 
+------------------------------*/
+#event-registration-modal .title{
+    font-size: 1.15rem;
+    font-weight: 400;
+}
+
 /*-----------------
 EVENT VIEW STYLES 
 -----------------*/
