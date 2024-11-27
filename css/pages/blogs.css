@@ -13,10 +13,6 @@ BLOG VIEW STYLES
   width: 65%;
 }
 
-.featured-blog-container {
-  width: 35%;
-}
-
 .recent-blog-container h1,
 .featured-blog-container h1,
 .more-blog-container h1 {
@@ -50,6 +46,10 @@ BLOG VIEW STYLES
   text-align: justify;
   margin: 0.5rem;
 
+}
+
+.featured-blog-container {
+  width: 35%;
 }
 
 .featured-blog {
@@ -141,3 +141,18 @@ BLOG VIEW STYLES
 /*-----------------
 BLOG CONTENT STYLES 
 -----------------*/
+.main-container {
+  margin-top: 7rem;
+}
+
+.blog-title-container h1 {
+  color: var(--heading-color);
+  font-weight: 100;
+  margin-bottom: .50rem;
+}
+
+.blog-title img {
+  width: 57%;
+  border: 2px solid var(--accent);
+}
+
