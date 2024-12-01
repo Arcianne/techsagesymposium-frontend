@@ -8,6 +8,9 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <!-- LDCV loader styles -->
+    <link rel="stylesheet" href="./lib/ldcv/loader.min.css">
+    
     <!-- global styles -->
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/theme/light.css" id="theme">
@@ -112,34 +115,34 @@
                         </div>
 
                         <p>How can we Reach you?</p>
-
                         <div>
-                            <label for="name">Name: </label>
-                            <input id="name" type="text" name="name" placeholder="E.g. Juan Dela Cruz" required>
+                            <label for="name">Full Name: </label>
+                            <input id="registrator-full-name" type="text" name="registrator-full-name" placeholder="E.g. Juan Dela Cruz" required>
                         </div>
 
                         <div>
                             <label id="Email">Email: </label>
-                            <input type="email" id="email" name="email" placeholder="E.g. juandelacruz123@gmail.com" required>
+                            <input type="email" id="registrator-email" name="registrator-email" placeholder="E.g. juandelacruz123@gmail.com" required>
                         </div>
 
                         <div>
                             <label id="contact">Contact Number: </label>
-                            <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
+                            <input type="tel" id="registrator-contact-number" name="registrator-contact-number" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
                         </div>
                     </div>
                 </div>
+
+                <input type="file" id="event-image-input" />
+                <input type="file" id="speaker-image-input" />
                 
                 <div class="buttons">
-                    <div class="button">
-                        <input class="btn" type="submit" value="Submit"/>
-                    </div>
-
-                    <div>
-                        <a href="events.html">
-                            <button class="btn" type="button" onclick>Cancel</button>
-                        </a>
-                    </div>
+                    <button class="btn submit" type="submit">
+                        Submit
+                        <!-- <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> -->
+                    </button>
+                    <a href="events.html">
+                        <button class="btn" type="button">Cancel</button>
+                    </a>
                 </div>       
             </form>
         </div>

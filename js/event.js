@@ -30,18 +30,18 @@ async function fetchEventById() {
                             <button class="btn" onclick="generateBannerModal.toggle()">Generate Banner</button>
                         </div>
                     </div>
-                    <img src="assets/event-banner.png" alt="Mika Soriano">
+                    <img src="${dataSource.images.event_cover}" alt="Event Cover">
                 </div>
-                <p>${dataSource.speaker_desc}</p>
+                <p>${dataSource.event_details}</p>
             </section>
 
             <h1 class="subheading">About the Speaker</h1>
             <section class="about-speaker">
-                <img src="assets/event-author.png" alt="speaker">
-                <div>
+                <img src="${dataSource.images.speaker_image}" alt="speaker">
+                <div class="speaker-details">
                     <h2>${dataSource.speaker}</h2>
                     <h2>Full-Stack Web Developer & Educator</h2>
-                    <p>${dataSource.event_detail}</p>
+                    <p>${dataSource.speaker_information}</p>
                 </div>
             </section>
         `

@@ -129,13 +129,15 @@ EVENT VIEW STYLES
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }
 
-.details .heading {
-    width: 40%;
+.details .heading,
+.about-speaker .speaker-details {
+    width: 50%;
 }
 
-.event-details h2,
+.event-details h2,s
 .about-speaker h2 {
     color: var(--text-color);
 }
@@ -165,10 +167,14 @@ EVENT VIEW STYLES
     gap: 1rem;
 }
 
-.event-details img,
-.about-speaker img {
-    width: 36rem;
+.about-speaker img,
+.event-details img {
+    width: 50%;
     border-radius: .5rem;
+}
+
+.event-details img {
+    aspect-ratio: 16/10;
 }
 
 .subheading {
@@ -178,8 +184,12 @@ EVENT VIEW STYLES
 .about-speaker {
     margin-top: 1rem;
     display: flex;
+    gap: 2rem;
     justify-content: space-between;
-    gap: 5rem;
+}
+
+.about-speaker img {
+    aspect-ratio: 4/3;
 }
 
 /*--------------------
