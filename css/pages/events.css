@@ -1,5 +1,5 @@
 /*-----------------
-EVENT LIST STYLES 
+EVENTS LIST STYLES 
 -----------------*/
 .filter {
     display: flex;
@@ -180,4 +180,15 @@ EVENT VIEW STYLES
     display: flex;
     justify-content: space-between;
     gap: 5rem;
+}
+
+/*--------------------
+404 NOT FOUND STYLES 
+--------------------*/
+.not-found{
+    margin-top: 6rem;
+}
+
+.not-found h1{
+    color: var(--text-color);
 }

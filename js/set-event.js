@@ -13,7 +13,7 @@ function setEvent(event) {
     try {
         axios({
             method: 'post',
-            url: 'http://localhost:8000/api/v1/events',
+            url: ENVIRONMENT.API_BASE_URL + "/api/v1/events",
             data: {
                 title: title.value,
                 attendees: attendees.value,

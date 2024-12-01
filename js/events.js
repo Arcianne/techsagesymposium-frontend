@@ -1,6 +1,10 @@
+viewEvent = function(id) {
+    window.location.href = `event.html?id=${id}`;
+}
+
 async function fetchApprovedEvents() {
     try {
-        const response = await axios.get("http://localhost:8000/api/v1/events/pending-status/true");
+        const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/events/pending-status/true");
         const listContainer = document.getElementById("list-container");
         console.log(response.data.data);
         const dataSource = response.data.data
@@ -37,9 +41,7 @@ async function fetchApprovedEvents() {
                         <p>Date</p>
                         <p>${moment(event.date).format('MM/DD/YYYY')}</p>
                     </div>
-                    <a href="event.html">
-                        <button class="btn">View</button>
-                    </a>
+                    <button class="btn" onclick="viewEvent('${event._id}')">View</button>
                 </div>
             </div>
         `).join('')
