@@ -1,5 +1,6 @@
 // LDCV Initialization
-const ldcv = new ldcover({ root: "#event-registration-modal" }); 
+const eventRegistrationModal = new ldcover({ root: "#event-registration-modal" }); 
+const generateBannerModal = new ldcover({ root: "#generate-banner-modal" }); 
 
 // Get Params from URL
 const queryString = window.location.search;
@@ -25,8 +26,8 @@ async function fetchEventById() {
                         <p>@${dataSource.location}</p>
                         <p>January 05, 2025 at 10:00 AM</p>
                         <div class="event-cta">
-                            <button class="btn" onclick="ldcv.toggle()">Join Now!</button>
-                            <button class="btn" onclick="navigateToEventBanner()">Generate Banner</button>
+                            <button class="btn" onclick="eventRegistrationModal.toggle()">Join Now!</button>
+                            <button class="btn" onclick="generateBannerModal.toggle()">Generate Banner</button>
                         </div>
                     </div>
                     <img src="assets/event-banner.png" alt="Mika Soriano">

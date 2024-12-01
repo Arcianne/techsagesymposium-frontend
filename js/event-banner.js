@@ -5,7 +5,7 @@ const id = urlParams.get('id');
 
 const qrCode = document.getElementById("qr-code")
 const qrData = ENVIRONMENT.BASE_URL + "/event.html?id=" + id
-async function generateBanner() {
+async function generateQRCode() {
     const response = await axios.get(
         `https://api.qrserver.com/v1/create-qr-code/?data=${qrData}&size=250x250`, 
         { responseType: "blob" }
@@ -20,4 +20,4 @@ async function generateBanner() {
     qrCode.src = imageUrl;
 }
 
-generateBanner()
+generateQRCode()
