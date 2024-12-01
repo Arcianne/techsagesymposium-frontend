@@ -1,10 +1,10 @@
 "use strict";
 
-// AOS Initialization
+/*------------- AOS Initialization -------------*/
 AOS.init({
     duration: 1100
 });
-        
+
 /*------------- Start of Async Drift Code -------------*/
 !function() {
     var t = window.driftt = window.drift = window.driftt || [];

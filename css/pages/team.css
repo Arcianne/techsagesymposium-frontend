@@ -97,6 +97,7 @@ body {
     height: 45rem;
     border-radius: 12px;    
 }
+
 @media screen and (max-width: 768px) {
     .team-section {
         padding: 1.5rem 0.625rem;
