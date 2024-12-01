@@ -1,0 +1,18 @@
+@media (max-width: 754px){
+    nav ul li,
+    .action i,
+    .action a {
+        display: none;
+    }
+    .foot-nav ul{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px){
+    .maincontainer {
+        grid-template-columns: 1fr;
+    }
+}
+

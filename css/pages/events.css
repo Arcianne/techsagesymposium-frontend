@@ -82,7 +82,7 @@ EVENT REGISTRATION MODAL STYLES
 }
 
 .inner {
-    background-color: red;
+    background-color: var(--background-color) !important;
 }
 
 .registration {
