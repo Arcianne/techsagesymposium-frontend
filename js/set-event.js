@@ -58,7 +58,7 @@ async function setEvent(event) {
                 date: date.value,
                 speaker_information: speakerInformation.value,
                 event_details: eventDetails.value,
-                is_pending: false,
+                is_pending: true,
                 images: {
                     event_cover: eventCoverBase64,
                     speaker_image: speakerImageBase64,

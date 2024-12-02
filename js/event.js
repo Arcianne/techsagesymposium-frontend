@@ -11,8 +11,12 @@ function navigateToEventBanner() {
     window.location.href = `event-banner.html?id=${id}`;
 }
 
-async function registerAttendee() {
-    console.log('i love you po')
+function getEventDetails(id, title) {
+    const eventIdInput = document.getElementById("event-id")
+    const modalTitle = document.getElementById("modal-title")
+    
+    eventIdInput.value = id
+    modalTitle.innerHTML = 'Register for the ' + title
 }
 
 const eventDetails = document.getElementById("event-details");
@@ -30,7 +34,7 @@ async function fetchEventById() {
                         <p>@${dataSource.location}</p>
                         <p>January 05, 2025 at 10:00 AM</p>
                         <div class="event-cta">
-                            <button class="btn" onclick="eventRegistrationModal.toggle()">Join Now!</button>
+                            <button class="btn" onclick="eventRegistrationModal.toggle(); getEventDetails('${dataSource._id}', '${dataSource.title}')">Join Now!</button>
                             <button class="btn" onclick="generateBannerModal.toggle()">Generate Banner</button>
                         </div>
                     </div>
@@ -53,7 +57,7 @@ async function fetchEventById() {
         eventDetails.innerHTML = htmlContent;
     } catch (error) {
         const htmlContent = `
-            <div class="container not-found">
+            <div class="not-found">
                 <h1>Event Not Found</h1>
             </div>
         `
@@ -63,4 +67,43 @@ async function fetchEventById() {
     }
 }
 
-fetchEventById()
+async function registerAttendee() {
+    const attendeeName = urlParams.get('attendee-name');
+    const attendeeEmail = urlParams.get('attendee-email');
+    const attendeeContact = urlParams.get('attendee-contact');
+    const eventId = urlParams.get('event-id');
+
+    const response = await axios.post(
+        ENVIRONMENT.API_BASE_URL + '/api/v1/attendees',
+        {
+            attendee_name: attendeeName,
+            email: attendeeEmail,
+            contact_no: attendeeContact,
+            event_id: eventId,
+            is_pending: true
+        }
+    )
+
+    console.log({
+        attendee_name: attendeeName,
+        email: attendeeEmail,
+        contact_no: attendeeContact,
+        event_id: eventId,
+        is_pending: true
+    })
+}
+
+if(id){
+    fetchEventById()
+    
+} else{
+    registerAttendee()
+    const htmlContent = `
+        <div class="registration-success">
+            <h1 id="">Thanks, ${urlParams.get('attendee-name')}</h1>
+            <h1>Registration Successful 👏</h1>
+            <p>Please wait a couple of days as we confirm your registration. Expect a call or email using the information you provided.</p>
+        </div>
+    `
+    eventDetails.innerHTML = htmlContent;
+}

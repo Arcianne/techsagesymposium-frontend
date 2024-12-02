@@ -209,8 +209,8 @@
             <div class="newsletter">
                 <div>
                     <p>Get your FREE guide to "Top 10 Emerging Technologies of 2024"</p>
-                    <form class="email">
-                        <input type="email" placeholder="Your Email Address">
+                    <form onsubmit="registerSubscriber(event)" class="email">
+                        <input type="email" placeholder="Your Email Address" id="subscriber-email">
                         <button class="btn" type="submit">Submit</button>
                     </form>
                 </div>
@@ -269,6 +269,12 @@
 
     <!-- sweet alert script -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- environment variables -->
+    <script src="config/environment.js"></script>
     
     <!-- dark & light mode script -->
     <script src="js/toggle-theme.js" type="module"></script>
