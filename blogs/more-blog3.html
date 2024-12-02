@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSageSymposium - Blogs</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    <!-- AOS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- global styles -->
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/theme/light.css" id="theme">
+
+    <!-- page style -->
+    <link rel="stylesheet" href="../css/pages/blogs.css">
+</head>
+<body>
+    <!-- nav bar -->
+    <header>
+        <nav class="items container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/logo.png" alt="TechSageSymposium-icon">
+                    <h1>TechSageSymposium</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../blogs.html">Blogs</a></li>
+                    <li><a href="../faqs.html">FAQs</a></li>
+                </ul>
+                <div class="action">
+                    <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
+                    <a href="../set-event.html">
+                        <button class="btn">Set Event</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container container">
+            <!-- Scroll Navigation -->
+            <nav class="scroll-nav">
+                <ul>
+                    <li><a href="#section1">Plan for Scalability from the Start</a></li>
+                    <li><a href="#section2">Choose the Right Tech Stack</a></li>
+                    <li><a href="#section3">Leverage Cloud Infrastructure</a></li>
+                    <li><a href="#section4">Optimize Database Performance</a></li>
+                    <li><a href="#section5">Ensure Security at Scale</a></li>
+                    <li><a href="#section6">Prepare for Disaster Recovery</a></li>
+                </ul>
+            </nav>
+            <div class="blog-title-container">
+                <h1>Building Scalable Apps: Best Practices for Developers</h1>
+                <div class="blog-title">
+                    <img src="../assets/more_blogs3.jpg" alt="seminar">
+                </div>
+            </div>
+            <div class="content">
+                <div id="section1" class="first-content">
+                    <h2>Plan for Scalability from the Start</h2>
+                    <p>Scalability begins with thoughtful architecture. Start by designing your application with growth in mind. Opt for a modular approach that allows for easy updates and expansions. Use microservices architecture when applicable, as it enables individual components to scale independently.</p>
+                    <p>Pro Tip: Avoid tightly coupled systems to minimize bottlenecks.</p>
+                </div>
+                <div class="second-content" id="section2">
+                    <h2>Choose the Right Tech Stack</h2>
+                    <p>Select tools and frameworks that align with your scalability goals. Consider languages and databases optimized for performance under heavy loads.</p>
+                    <ul>
+                        <li>Languages: Go, Java, or Python for backend services.</li>
+                        <li>Databases: Use SQL databases like PostgreSQL for relational data and NoSQL options like MongoDB or DynamoDB for unstructured data.</li>
+                    </ul>
+                    <p>Pro Tip: Cloud-native tools like Kubernetes and serverless platforms can ease scalability challenges.</p>
+                </div>
+                <div class="third-content" id="section3">
+                    <h2>Leverage Cloud Infrastructure</h2>
+                    <p>Cloud platforms like AWS, Google Cloud, and Azure offer scalable infrastructure on demand. They provide auto-scaling, load balancing, and distributed computing capabilities, which are essential for handling fluctuating workloads.</p>
+                </div>
+                <div class="fourth-content" id="section4">
+                    <h2>Optimize Database Performance</h2>
+                    <p>Your app's database is often a bottleneck in scaling. Implement practices like:</p>
+                    <ul>
+                        <li>Sharding: Distribute your database across multiple servers to balance the load.</li>
+                        <li>Indexing: Ensure frequently queried fields are indexed for faster retrieval.</li>
+                        <li>Caching: Use tools like Redis or Memcached to store frequent queries in memory.</li>
+                    </ul>
+                    <p>Pro Tip: Regularly monitor and optimize slow queries.</p>
+                </div>
+                <div class="fifth-content" id="section5">
+                    <h2>Ensure Security at Scale</h2>
+                    <p>As your app scales, security risks grow. Build a security-first mindset to prevent vulnerabilities.</p>
+                    <ul>
+                        <li>Use rate-limiting to prevent DDoS attacks</li>
+                        <li>Encrypt data in transit and at rest.</li>
+                        <li>Regularly audit and patch dependencies.</li>
+                    </ul>
+                    <p>Pro Tip: Adopt Zero Trust principles for user authentication and authorization.</p>
+                </div>
+                <div class="sixth-content" id="section6">
+                    <h2>Prepare for Disaster Recovery</h2>
+                    <p>To safeguard your application against potential failures, it's essential to have a robust disaster recovery plan in place. This should include automated backups to preserve critical data, redundant systems distributed across multiple geographic regions to minimize the impact of localized disruptions, and quick failover mechanisms to ensure seamless continuity in case of system failures. By proactively addressing these aspects, you can maintain reliability and user trust even in challenging scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-nav container">
+            <div class="info">
+                <h1>TechSageSymposium</h1>
+                <p>TechSageSymposium delivers expert-led tech seminars and webinars, empowering professionals with up-to-date knowledge and skills.</p>
+            </div>
+            <div class="link">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li class="active"><a href="../index.html">Home</a></li>
+                    <li><a href="../events.html">Events</a></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../blogs.html">Blogs</a></li>
+                    <li><a href="../faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="contribute">
+                <h1>Contribute to this project</h1>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend" target="_blank">
+                            Contribute
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend/issues" target="_blank">
+                            Issues & Feature Request
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="sponsor">
+                <h1>Thanks to our sponsors</h1>
+                <img src="../assets/zoom-logo.png" alt="zoom">
+                <img src="../assets/globe-logo.png" alt="globe telecom">
+                <img src="../assets/logo-cisco.png" alt="cisco">
+            </div>
+            <div class="socials">
+                <h1>Socials</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Dark & Light Mode Script -->
+    <script src="js/toggle-theme.js" type="module"></script>
+    
+</body>
+</html>

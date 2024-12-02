@@ -211,12 +211,23 @@ html {
   font-size: 1.25rem;
 }
 
+.content ol {
+  list-style-type: decimal;
+  margin: .5rem 0 0 2rem;
+  color: var(--text-color);
+  font-size: 1.25rem;
+}
+
 .first-content h2,
 .second-content h2,
 .third-content h2,
 .fourth-content h2,
 .fifth-content h2,
-.sixth-content h2 {
+.sixth-content h2,
+.seventh-content h2,
+.eighth-content h2,
+.ninth-content h2,
+.tenth-content h2 {
   margin-top: .5rem;
   color: var(--heading-color);
   font-weight: 100;
@@ -228,7 +239,11 @@ html {
 .third-content p,
 .fourth-content p,
 .fifth-content p,
-.sixth-content p {
+.sixth-content p,
+.seventh-content p,
+.eighth-content p,
+.ninth-content p,
+.tenth-content p {
   margin-top: .5rem;
   color: var(--text-color);
   font-size: 1.25rem;

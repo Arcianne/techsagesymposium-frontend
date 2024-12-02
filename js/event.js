@@ -31,7 +31,7 @@ async function fetchEventById() {
                     <div class="heading">
                         <h1>${dataSource.title}</h1>
                         <h2>with ${dataSource.speaker}</h2>
-                        <p>@${dataSource.location}</p>
+                        <p>@${dataSource.venue}</p>
                         <p>January 05, 2025 at 10:00 AM</p>
                         <div class="event-cta">
                             <button class="btn" onclick="eventRegistrationModal.toggle(); getEventDetails('${dataSource._id}', '${dataSource.title}')">Join Now!</button>
