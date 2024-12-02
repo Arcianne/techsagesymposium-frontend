@@ -1,3 +1,7 @@
+main.homepage{
+    overflow-x: hidden;
+}
+
 .home {
     position: relative;
     display: inline-block;
@@ -51,6 +55,7 @@
     box-shadow: 0 0 0 2px #69c9d7;
     cursor: pointer;
     overflow: hidden;
+    margin-top: 1rem;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -129,14 +134,17 @@
     justify-content: center;
 } */
 
-
-
-
 .content {
     margin: 3rem 0 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+}
+
+.first .content-image,
+.first .join{
+    width: 50%;
 }
 
 .first h1 {
@@ -153,14 +161,13 @@
 
 .first p {
     text-align: justify;
-    width: 34rem;
     margin-top: 1rem;
     color: var(--text-color);
     font-size: 1.25rem;
 }
 
 .first img {
-    width: 30rem;
+    width: 100%;
     border-radius: .5rem;
 }
 
@@ -168,6 +175,11 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.second .potential,
+.second .content-image{
+    width: 50%;
 }
 
 .second h1 {
@@ -183,30 +195,27 @@
 
 .second p {
     text-align: justify;
-    width: 31rem;
     margin: .5rem 0 .5rem 3rem;
     color: var(--text-color);
     font-size: 1.25rem;
 }
 
 .second img {
-    width: 30rem;
+    width: 100%;
     height: 18rem;
     border-radius: .5rem;
     display: flex;
     align-items: center;
 }
 
-.third {
-    display: flex;
-    gap: .75rem;
+.third .future,
+.third .content-image{
+    width: 50%;
 }
 
 .third img {
-    width: 30rem;
-    height: 18rem;
+    width: 100%;
     border-radius: .5rem;
-    margin-left: 3rem;
 }
 
 .third h1 {
@@ -258,8 +267,7 @@
 
 .bullet-container .text-content p {
     text-align: justify;
-    width: 27rem;
-    margin: 1rem 0 1.5rem 3rem;
+    margin: 1rem 0 1.5rem 1rem;
     color: var(--text-color);
     font-size: 1.25rem;
 }
@@ -330,13 +338,11 @@
 
 .newsletter {
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 9rem;
-    width: 40rem;
+    width: 50%;
     background-color: var(--primary);
     border-radius: .5rem;
+    padding: 2rem 1.5rem;
+    /* text-align: center; */
 }
 
 .newsletter p{

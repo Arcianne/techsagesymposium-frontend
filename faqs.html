@@ -17,6 +17,9 @@
 
     <!-- page style -->
     <link rel="stylesheet" href="css/pages/faqs.css">
+
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -29,6 +32,7 @@
                 </a>
             </div>
             <div class="menu">
+                <!-- <i class="fa-solid fa-bars"></i> -->
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="events.html">Events</a></li>
@@ -41,8 +45,25 @@
                     <a href="set-event.html">
                         <button class="btn">Set Event</button>
                     </a>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                 </div>
             </div>
+        </nav>
+    </header>
+    
+    <!-- mobile nav bar -->
+    <header class="mobile-menu" id="mobile-menu">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+            </ul>
+            <a href="set-event.html">
+                <button class="btn">Set Event</button>
+            </a>
         </nav>
     </header>
 
@@ -173,6 +194,52 @@
         </section>
     </main>
 
+    <footer>
+        <div class="footer-nav container">
+            <div class="info">
+                <h1>TechSageSymposium</h1>
+                <p>TechSageSymposium delivers expert-led tech seminars and webinars, empowering professionals with up-to-date knowledge and skills.</p>
+            </div>
+            <div class="link">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="contribute">
+                <h1>Contribute to this project</h1>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend" target="_blank">
+                            Contribute
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend/issues" target="_blank">
+                            Issues & Feature Request
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="sponsor">
+                <h1>Thanks to our sponsors</h1>
+                <img src="assets/zoom-logo.png" alt="zoom">
+                <img src="assets/globe-logo.png" alt="globe telecom">
+                <img src="assets/logo-cisco.png" alt="cisco">
+            </div>
+            <div class="socials">
+                <h1>Socials</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
     <!-- AOS script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -184,5 +251,8 @@
 
     <!-- FAQS script -->
     <script src="js/faqs.js"></script>
+
+    <!-- main script -->
+    <script src="js/main.js"></script>
 </body>
 </html>

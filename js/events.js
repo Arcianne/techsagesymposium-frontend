@@ -14,11 +14,12 @@ async function fetchApprovedEvents() {
                 <div class="container list-details">
                     <div class="title">
                         <h1>${event.title}</h1>
-                        <p><span>#</span>${event.tags}</p>
-                        <p><span>#</span>${event.tags}</p>
+                        ${event.tags.map(tag => 
+                            `<p><span>#</span>${tag}</p>`).join('')
+                        }
                     </div>
                     <div class="attendees">
-                        <p>No. of Attendees</p>
+                        <p>Max Attendees</p>
                         <p>${event.attendees}</p>
                     </div>
                     <div class="speaker">

@@ -36,7 +36,8 @@ EVENTS LIST STYLES
 
 .list .list-details{
     display: grid;
-    grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr 1fr 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr 1fr 1fr 2fr .5fr 1fr 1fr;
+    gap: .5rem;
     /* justify-content: space-between; */
     align-items: center;
     padding: .5rem 0;
@@ -189,7 +190,7 @@ EVENT VIEW STYLES
 }
 
 .subheading {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .about-speaker {

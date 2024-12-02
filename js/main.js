@@ -29,3 +29,16 @@ AOS.init({
 drift.SNIPPET_VERSION = '0.3.1';
 drift.load('sz2kpxvfxfff');
 /*------------ End of Async Drift Code  ------------*/
+
+/*------------ Toggle Mobile Menu  ------------*/
+function toggleMenu() {
+    const mobileMenu = document.getElementById("mobile-menu")
+
+    const computedRight = window.getComputedStyle(mobileMenu).right;
+    
+    if(computedRight === "0px"){
+        mobileMenu.style.right = "-100%"
+    }else{
+        mobileMenu.style.right = "0px"
+    }
+}

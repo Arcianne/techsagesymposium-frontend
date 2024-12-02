@@ -17,6 +17,9 @@
 
     <!-- page style -->
     <link rel="stylesheet" href="css/pages/set-event.css">
+
+    <!-- responsive style -->
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -39,9 +42,28 @@
                 </ul>
                 <div class="action">
                     <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
-                    <button class="btn">Set Event</button>
+                    <a href="set-event.html">
+                        <button class="btn">Set Event</button>
+                    </a>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <!-- mobile nav bar -->
+    <header class="mobile-menu" id="mobile-menu">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+            </ul>
+            <a href="set-event.html">
+                <button class="btn">Set Event</button>
+            </a>
         </nav>
     </header>
 
@@ -61,8 +83,8 @@
                         </div>
 
                         <div>
-                            <label for="mode">Mode of Delivery </label>
-                            <input id="mode" name="mode" type="text" placeholder="E.g Seminar/Webinar" required>
+                            <label for="mode-of-delivery">Mode of Delivery </label>
+                            <input id="mode-of-delivery" name="mode-of-delivery" type="text" placeholder="E.g Seminar/Webinar" required>
                         </div>
 
                         <div>
@@ -100,17 +122,17 @@
 
                     <div class="registration-details">
                         <div>
-                            <label for="speaker-information">About the Speaker </label>
+                            <label for="speaker-information">About the Speaker: </label>
                             <textarea id="speaker-information" name="speaker-information" rows="3" cols="30" placeholder="Speaker's Information: Name, Occupation, and Brief Introduction"></textarea>
                         </div>
 
                         <div>
-                            <label for="event-details">Details of the Event </label>
+                            <label for="event-details">Details of the Event: </label>
                             <textarea id="event-details" name="event-details" rows="3" cols="30" placeholder="Contents of the Event"></textarea>
                         </div>
 
                         <div>
-                            <label for="tags">Tags </label>
+                            <label for="tags">Tags: </label>
                             <textarea id="tags" name="tags" rows="3" cols="30" placeholder="E.g. webdev, computer-science, software-engineer"></textarea>
                         </div>
 
@@ -215,5 +237,8 @@
 
     <!-- set-event script -->
     <script src="js/set-event.js"></script>
+    
+    <!-- main script -->
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,31 +1,171 @@
 @media (max-width: 754px){
-    nav ul li,
-    .action i,
-    .action a {
-        display: none;
-    }
-    .foot-nav ul{
+    .foot-nav ul {
         display: block;
         text-align: center;
     }
 }
 
 @media (max-width: 600px){
-    .maincontainer {
-        grid-template-columns: 1fr;
+    .container {
+        max-width: 100%;
+        width: 90%;
     }
 
-    .home img {
-        /* width: 100%; */
+    /* Navbar Media Queries */
+    header {
+        padding: .5rem 0;
+    }
+    
+    nav img {
+        width: 60px;
+    }
+
+    .menu .action a,
+    .menu ul li,
+    .logo h1 {
+        display: none;
+    }
+
+    .menu .action .fa-bars {
+        display: block;
+    }
+
+    header.mobile-menu {
+        display: block;
+        height: 100vh;
+        z-index: 2;
+        position: fixed;
+        right: -100%;
+        transition: right 0.3s ease-in-out 0.2s; 
+    }
+
+    header.mobile-menu nav {
+        font-size: 1.5rem;
+        text-align: right;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .mobile-menu a {
+        text-align: right;
+    }
+
+    /* Home Media Queries */
+    .homepage {
+        margin-top: 4.5rem;
+    }
+
+    .home .overlay .title h1 {
+        font-size: 1.75rem;
+    }
+
+    .home .overlay .title h2 {
+        font-size: 1.25rem;
     }
 
     .home .overlay {
-
+        bottom: 1rem;
     }
 
+    .content {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .first .content-image,
+    .first .join,
+    .second .potential,
+    .second .content-image,
+    .third .future,
+    .third .content-image {
+        width: 100%;
+    }
+
+    .first h1 {
+        font-size: 2.25rem;
+    }
+
+    .first h2 {
+        font-size: 1.5rem;
+    }
+    
+    .first p {
+        width: 100%;
+    }
+    
+    .first img {
+        margin-top: 1rem;
+    }
+
+    .content.third{
+        flex-direction: column-reverse;
+    }
+    
+    .bullet-align .line{
+        height: 6.65rem;
+    }
+
+    .bullet-container .text-content p{
+        font-size: 1.15rem;
+    }
+
+    .newsletter{
+        width: 100%;
+    }
+
+    /* About Media Queries */
+    .about-content{
+        flex-direction: column;
+    }
+
+    .about-logo,
+    .about-text{
+        width: 100%;
+    }
+
+    .vision-container{
+        flex-direction: column
+    }
+
+    .mission-container,
+    .values-container{
+        flex-direction: column-reverse;
+    }
+    
     /* events.html Media Queries */
+    .list .list-details {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .filter {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .filter select {
+        margin-top: 0;
+    }
+
+    .list .list-details .date,
+    .list .list-details .duration,
+    .list .list-details .venue,
+    .list .list-details .attendees {
+        display: none;
+    }
+
+    /* event.html Media Queries */
     .details {
         display: block;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
     }
 
     .event-details h1,
@@ -34,19 +174,75 @@
     }
 
     .event-details p,
-    .about-speaker p{
+    .about-speaker p {
         font-size: 1.25rem;
     }
     
     .details .heading,
-    .event-details img {
+    .about-speaker .speaker-details,
+    .event-details img,
+    .about-speaker img {
         width: 100%;
     }
     
     .event-cta {
         width: 100%;
+        margin: 1rem 0;
     }
 
+    .subheading {
+        margin-top: 1rem;
+    }
 
+    .about-speaker {
+        display: block;
+    }
+
+    .about-speaker img {
+        margin-bottom: 1rem;
+    }
+
+    /* set-event.html Media Queries */
+    .form-title {
+        padding-top: 0;
+    }
+
+    .form-title h2 {
+        font-size: 1.25rem;
+    }
+
+    .set-event {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .set-event .registration, 
+    .set-event .registration-details {
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    /* Blogs Media Queries */
+    .highlight-blog{
+        flex-direction: column;
+    }
+
+    .featured-blog-container,
+    .recent-blog-container{
+        width: 100%;
+    }
+
+    .more-blogs{
+        grid-template-columns: 1fr;
+    }
+
+    /* Footer Media Queries */
+    .footer-nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-nav .info {
+        width: 100%;
+    }
 }
-

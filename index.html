@@ -14,10 +14,12 @@
     <!-- global styles -->
     <link rel="stylesheet" href="css/globals.css">
     <link rel="stylesheet" href="css/theme/light.css" id="theme">
-    <link rel="stylesheet" href="css/media.css">
 
     <!-- page styles -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -43,12 +45,29 @@
                     <a href="set-event.html">
                         <button class="btn">Set Event</button>
                     </a>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                 </div>
             </div>
         </nav>
     </header>
+    
+    <!-- mobile nav bar -->
+    <header class="mobile-menu" id="mobile-menu">
+        <nav class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="faqs.html">FAQ's</a></li>
+            </ul>
+            <a href="set-event.html">
+                <button class="btn">Set Event</button>
+            </a>
+        </nav>
+    </header>
 
-    <main>
+    <main class="homepage">
         <!-- hero -->
         <section>
             <div class="home">
@@ -84,10 +103,7 @@
                         <button class="btn">Browse Events</button>
                     </a>
                 </div>
-                <div data-aos="fade-left">
-                    <img src="assets/home-empowering.png" alt="brain">
-                </div>
-                
+                <img src="assets/home-empowering.png" alt="brain" data-aos="fade-left" class="content-image">
             </div>
         </section>
 
@@ -102,56 +118,52 @@
                     <h2>ACCESSIBLE AND FLEXIBLE LEARNING</h2>
                     <p>Our seminars feature a roster of seasoned professionals, industry pioneers, and technology thought leaders. Gain insights from experts who are at the forefront of innovation and who are eager to share their knowledge and strategies for success.</p>
                 </div>
-                <div data-aos="fade-left">
-                    <img src="assets/home-potential.png" alt="potential">
-                </div>
+                <img src="assets/home-potential.png" alt="potential" data-aos="fade-left" class="content-image">
             </div>
         </section>
 
         <section class="container">
             <div class="third content">
-                <div data-aos="fade-right">
-                    <img src="assets/home-future.png" alt="thinking">
-                </div>
+                <img src="assets/home-future.png" alt="thinking" data-aos="fade-right" class="content-image">
                 <div class="future">
                     <h1>Fuel Your Future with Us</h1>
-                        <div class="bullet-container">
-                            <div class="bullet-align">
-                                <div class="outside-circle">
-                                    <div class="bullet"></div>
-                                </div>
-                                <div class="line"></div>
-                            </div>
-                            <div class="text-content">
-                                <h2>EXPERT-LED SEMINARS</h2>
-                                <p>Our sessions are led by top professionals who bring practical insights and industry knowledge straight to you.</p>
-                            </div>
-                        </div>
-                    
                     <div class="bullet-container">
-                            <div class="bullet-align">
-                                <div class="outside-circle">
-                                    <div class="bullet"></div>
-                                </div>
-                                <div class="line"></div>
+                        <div class="bullet-align">
+                            <div class="outside-circle">
+                                <div class="bullet"></div>
                             </div>
-                            <div class="text-content">
-                                <h2>ACTIONABLE KNOWLEDGE</h2>
-                                <p>Can't attend live? No problem! Access recorded seminars on demand at your convenience.</p>
+                            <div class="line"></div>
+                        </div>
+                        <div class="text-content">
+                            <h2>EXPERT-LED SEMINARS</h2>
+                            <p>Our sessions are led by top professionals who bring practical insights and industry knowledge straight to you.</p>
+                        </div>
+                    </div>
+                
+                    <div class="bullet-container">
+                        <div class="bullet-align">
+                            <div class="outside-circle">
+                                <div class="bullet"></div>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="text-content">
+                            <h2>ACTIONABLE KNOWLEDGE</h2>
+                            <p>Can't attend live? No problem! Access recorded seminars on demand at your convenience.</p>
+                        </div>
+                    </div>
+                
+                    <div class="bullet-container">
+                        <div class="bullet-align">
+                            <div class="outside-circle">
+                                <div class="bullet"></div>
                             </div>
                         </div>
-                    
-                        <div class="bullet-container">
-                            <div class="bullet-align">
-                                <div class="outside-circle">
-                                    <div class="bullet"></div>
-                                </div>
-                            </div>
-                            <div class="text-content">
-                                <h2>FLEXIBLE ACCESS</h2>
-                                <p>Walk away with real-world solutions, best practices, and innovative ideas that can be implemented immediately.</p>
-                            </div>
+                        <div class="text-content">
+                            <h2>FLEXIBLE ACCESS</h2>
+                            <p>Walk away with real-world solutions, best practices, and innovative ideas that can be implemented immediately.</p>
                         </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -207,13 +219,11 @@
 
         <section class="container">
             <div class="newsletter">
-                <div>
-                    <p>Get your FREE guide to "Top 10 Emerging Technologies of 2024"</p>
-                    <form onsubmit="registerSubscriber(event)" class="email">
-                        <input type="email" placeholder="Your Email Address" id="subscriber-email">
-                        <button class="btn" type="submit">Submit</button>
-                    </form>
-                </div>
+                <p>Get your FREE guide to "Top 10 Emerging Technologies of 2024"</p>
+                <form onsubmit="registerSubscriber(event)" class="email">
+                    <input type="email" placeholder="Your Email Address" id="subscriber-email">
+                    <button class="btn" type="submit">Submit</button>
+                </form>
             </div>
         </section>
     </main>

@@ -1,4 +1,5 @@
 const title = document.getElementById("title");
+const modeOfDelivery = document.getElementById("mode-of-delivery")
 const attendees = document.getElementById("attendees");
 const speakerName = document.getElementById("speaker-name");
 const location1 = document.getElementById("location");
@@ -7,6 +8,7 @@ const duration = document.getElementById("duration");
 const date = document.getElementById("date");
 const speakerInformation = document.getElementById("speaker-information");
 const eventDetails = document.getElementById("event-details");
+const tags = document.getElementById("tags");
 const registratorFullName = document.getElementById("registrator-full-name");
 const registratorEmail = document.getElementById("registrator-email");
 const registratorContactNumber = document.getElementById("registrator-contact-number");
@@ -50,6 +52,7 @@ async function setEvent(event) {
             url: ENVIRONMENT.API_BASE_URL + "/api/v1/events",
             data: {
                 title: title.value,
+                mode_of_delivery: modeOfDelivery.value,
                 attendees: attendees.value,
                 speaker: speakerName.value,
                 location: location1.value,
@@ -58,6 +61,7 @@ async function setEvent(event) {
                 date: date.value,
                 speaker_information: speakerInformation.value,
                 event_details: eventDetails.value,
+                tags: tags.value,
                 is_pending: true,
                 images: {
                     event_cover: eventCoverBase64,
