@@ -61,12 +61,20 @@ input::placeholder {
 .buttons {
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
+    gap: 1rem;
 }
 
-.button input{
-    font-size: 1.25rem;
-    width: 6.5rem;
-    height: 2.5rem;
-    padding: 5px 20px 5px 20px;
+.lds-ellipsis{
+    height: 10px;
+}
+
+.lds-ellipsis div{
+    width: 8px;
+    height: 8px;
+    top: 0;
+}
+
+.buttons .submit{
+    padding-left: 1rem;
+    padding-right: 1rem;
 }

@@ -5,13 +5,47 @@ const location1 = document.getElementById("location");
 const venue = document.getElementById("venue");
 const duration = document.getElementById("duration");
 const date = document.getElementById("date");
-const email = document.getElementById("email");
+const speakerInformation = document.getElementById("speaker-information");
+const eventDetails = document.getElementById("event-details");
+const registratorFullName = document.getElementById("registrator-full-name");
+const registratorEmail = document.getElementById("registrator-email");
+const registratorContactNumber = document.getElementById("registrator-contact-number");
+const eventImageInput = document.getElementById("event-image-input")
+const speakerImageInput = document.getElementById("speaker-image-input")
 
-function setEvent(event) {
+function convertImageToBase64(fileInput) {
+    const files = fileInput.files;
+
+    return new Promise((resolve, reject) => {
+        if(files && files[0]){
+            const reader = new FileReader();
+    
+            reader.onloadend = () => {
+                resolve(reader.result);
+            }
+
+            reader.onerror = (error) => {
+                reject(error);
+            }
+
+            reader.readAsDataURL(files[0])
+        }else{
+            reject(new Error("No file selected"));
+        }
+    })
+}
+
+
+async function setEvent(event) {
     event.preventDefault();
     
     try {
-        axios({
+        const [eventCoverBase64, speakerImageBase64] = await Promise.all([
+            convertImageToBase64(eventImageInput),
+            convertImageToBase64(speakerImageInput),
+        ]);
+
+        const response = await axios({
             method: 'post',
             url: ENVIRONMENT.API_BASE_URL + "/api/v1/events",
             data: {
@@ -22,8 +56,18 @@ function setEvent(event) {
                 venue: venue.value,
                 duration: duration.value,
                 date: date.value,
-                email: email.value,
-                is_pending: false
+                speaker_information: speakerInformation.value,
+                event_details: eventDetails.value,
+                is_pending: false,
+                images: {
+                    event_cover: eventCoverBase64,
+                    speaker_image: speakerImageBase64,
+                },
+                registrator: {
+                    full_name: registratorFullName.value,
+                    email: registratorEmail.value,
+                    contact_number: registratorContactNumber.value,
+                },
             }
         });
 
@@ -35,5 +79,4 @@ function setEvent(event) {
     } catch (error) {
         console.log(error)
     }
-    
 }
