@@ -206,6 +206,7 @@ EVENT VIEW STYLES
 /*--------------------
 404 NOT FOUND STYLES 
 --------------------*/
+.registration-success,
 .not-found{
     margin-top: 6rem;
 }

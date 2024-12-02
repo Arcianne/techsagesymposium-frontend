@@ -2,13 +2,13 @@ viewEvent = function(id) {
     window.location.href = `event.html?id=${id}`;
 }
 
+const listContainer = document.getElementById("list-container");
 async function fetchApprovedEvents() {
     try {
-        const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/events/pending-status/true");
-        const listContainer = document.getElementById("list-container");
+        const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/events/pending-status/false");
         console.log(response.data.data);
         const dataSource = response.data.data
-        // return response.data.data;
+        
         const htmlContent = dataSource.map(event => `
             <div class="list">
                 <div class="container list-details">

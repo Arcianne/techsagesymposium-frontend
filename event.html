@@ -55,28 +55,29 @@
     <div id="event-registration-modal" class="ldcv">
         <div class="base">
             <div class="inner">
-                <h1 class="title">Register for the Learn Modern Web Development Event</h1>
+                <h1 class="title" id="modal-title"></h1>
                 <form>
                     <div class="registration">
                         <div>
-                            <label for="name">Name: </label>
-                            <input id="name" type="text" name="name" placeholder="E.g. Juan Dela Cruz" required>
+                            <label for="attendee-name">Name: </label>
+                            <input id="attendee-name" type="text" name="attendee-name" placeholder="E.g. Juan Dela Cruz" required>
                         </div>
 
                         <div>
-                            <label id="Email">Email: </label>
-                            <input type="email" id="email" name="email" placeholder="E.g. juandelacruz123@gmail.com" required>
+                            <label for="attendee-email">Email: </label>
+                            <input type="email" id="attendee-email" name="attendee-email" placeholder="E.g. juandelacruz123@gmail.com" required>
                         </div>
 
                         <div>
-                            <label id="contact">Contact Number: </label>
-                            <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
+                            <label id="attendee-contact">Contact Number: </label>
+                            <input type="tel" id="attendee-contact" name="attendee-contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
                         </div>
+
+                        <input id="event-id" type="text" name="event-id" style="display: none;">
                     </div>
                     <div class="button">
-                        <button class="btn" onclick="registerAttendee()" type="button">Register</button>
+                        <button class="btn" onclick="registerAttendee()">Register</button>
                     </div>
-                    
                 </form>
             </div>
         </div>
