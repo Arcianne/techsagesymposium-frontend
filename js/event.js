@@ -7,8 +7,12 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
 
-navigateToEventBanner = function() {
+function navigateToEventBanner() {
     window.location.href = `event-banner.html?id=${id}`;
+}
+
+async function registerAttendee() {
+    console.log('i love you po')
 }
 
 const eventDetails = document.getElementById("event-details");

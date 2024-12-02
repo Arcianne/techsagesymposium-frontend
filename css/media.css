@@ -14,5 +14,39 @@
     .maincontainer {
         grid-template-columns: 1fr;
     }
+
+    .home img {
+        /* width: 100%; */
+    }
+
+    .home .overlay {
+
+    }
+
+    /* events.html Media Queries */
+    .details {
+        display: block;
+    }
+
+    .event-details h1,
+    .subheading {
+        font-size: 2rem;
+    }
+
+    .event-details p,
+    .about-speaker p{
+        font-size: 1.25rem;
+    }
+    
+    .details .heading,
+    .event-details img {
+        width: 100%;
+    }
+    
+    .event-cta {
+        width: 100%;
+    }
+
+
 }
 

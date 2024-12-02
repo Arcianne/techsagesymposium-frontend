@@ -21,6 +21,7 @@
 
     <!-- page style -->
     <link rel="stylesheet" href="css/pages/events.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -72,10 +73,10 @@
                             <input type="tel" id="contact" name="contact" placeholder="09XXXXXXXXX" pattern="\d{11}" maxlength="11" required>
                         </div>
                     </div>
-
                     <div class="button">
-                        <input class="btn" type="submit" value="Submit"/>
+                        <button class="btn" onclick="registerAttendee()" type="button">Register</button>
                     </div>
+                    
                 </form>
             </div>
         </div>
@@ -84,8 +85,26 @@
     <div id="generate-banner-modal" class="ldcv">
         <div class="base">
             <div class="inner">
+                <h1 class="title">Fill this out for your banner</h1>
                 <form>
-                    Lagay mo dito generate banner inputs
+                    <div class="event-banner">
+                        <div>
+                            <label for="heading">Banner Heading: </label>
+                            <input id="heading" type="text" name="heading" placeholder="E.g Innovate Tech: Future Conversations" required>
+                        </div>
+
+                        <div>
+                            <label for="promotional-text">Banner Promotional Text: </label>
+                            <textarea id="promotional-text" name="promotional-text" rows="3" cols="30" placeholder="E.g Join us for 'Innovate Tech: Future Conversations', where industry leaders share insights on the latest technological advancements and engage in thought-provoking discussions about the future of innovation!"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="button">
+                        <button class="btn" onclick="navigateToEventBanner()" type="button">
+                            Done
+                        </button>
+                    </div>
+
                 </form>
             </div>
         </div>

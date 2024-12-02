@@ -3,20 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner</title>
+    <title>Event Banner</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon"/>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- global styles -->
+    <link rel="stylesheet" href="css/globals.css">
+    <link rel="stylesheet" href="css/theme/light.css" id="theme">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- page styles -->
+    <link rel="stylesheet" href="css/pages/event-banner.css">
 </head>
 <body>
+        <!-- nav bar -->
+    <header>
+        <nav class="items container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="TechSageSymposium-icon">
+                    <h1>TechSageSymposium</h1>
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+                <div class="action">
+                    <i id="toggle-theme-button" class="fa-solid fa-moon"></i>
+                    <a href="set-event.html">
+                        <button class="btn">Set Event</button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <main class="container">
-        <div style="border: 1px solid black; padding: 1rem; display: inline-block;">
-            <img src="" alt="" id="qr-code">
+        <div class="main-container">
+            <div class="qr-code">
+                <img src="" alt="" id="qr-code">
+            </div>
+            <div class="content">
+                <h1>Unlock Your Web Development Potential: Join Our Expert-Led Sessions</h1>
+                <p>Take your coding skills to the next level with our 'Learn Modern Web Development' events. Gain hands-on experience in cutting-edge technologies like HTML5, CSS3, JavaScript, and more. Whether you're a beginner or a pro, you'll walk away with the tools and knowledge to build responsive, dynamic websites that stand out.</p>
+                <p class="scan">Scan the QR Code to learn more</p>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-nav container">
+            <div class="info">
+                <h1>TechSageSymposium</h1>
+                <p>TechSageSymposium delivers expert-led tech seminars and webinars, empowering professionals with up-to-date knowledge and skills.</p>
+            </div>
+            <div class="link">
+                <h1>Useful Links</h1>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="contribute">
+                <h1>Contribute to this project</h1>
+                <ul>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend" target="_blank">
+                            Contribute
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Arcianne/techsagesymposium-frontend/issues" target="_blank">
+                            Issues & Feature Request
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="sponsor">
+                <h1>Thanks to our sponsors</h1>
+                <img src="assets/zoom-logo.png" alt="zoom">
+                <img src="assets/globe-logo.png" alt="globe telecom">
+                <img src="assets/logo-cisco.png" alt="cisco">
+            </div>
+            <div class="socials">
+                <h1>Socials</h1>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
 
     <!-- axios cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- environment variables -->
     <script src="config/environment.js"></script>
+
+    <!-- dark & light mode script -->
+    <script src="js/toggle-theme.js" type="module"></script>
 
     <!-- event banner script -->
     <script src="js/event-banner.js"></script>
