@@ -193,6 +193,10 @@ EVENT VIEW STYLES
     margin-top: 2rem;
 }
 
+.subheading h1 {
+    color: var(--text-color);
+}
+
 .about-speaker {
     margin-top: 1rem;
     display: flex;
