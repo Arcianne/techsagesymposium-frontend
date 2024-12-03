@@ -1,3 +1,5 @@
+const loader = document.getElementById("loader")
+
 viewEvent = function(id) {
     window.location.href = `event.html?id=${id}`;
 }
@@ -5,6 +7,8 @@ viewEvent = function(id) {
 const listContainer = document.getElementById("list-container");
 async function fetchApprovedEvents() {
     try {
+        loader.style.display = "block";
+
         const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/events/pending-status/false");
         console.log(response.data.data);
         const dataSource = response.data.data
@@ -51,6 +55,8 @@ async function fetchApprovedEvents() {
     } catch (error) {
         console.log(error);
         throw new Error("Failed to fetch events");
+    } finally {
+        loader.style.display = "none";
     }
 }
 

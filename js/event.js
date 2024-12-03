@@ -23,9 +23,8 @@ function getEventDetails(id, title) {
 const eventDetails = document.getElementById("event-details");
 async function fetchEventById() {
     try {
-        setTimeout(() => {
-        }, 1000);
         loader.style.display = "block";
+        
         const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/events/" + id);
         console.log(response.data.data);
         const dataSource = response.data.data
