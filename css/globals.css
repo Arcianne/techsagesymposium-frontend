@@ -105,6 +105,10 @@ nav img {
     color: var(--heading-color);
 }
 
+#toggle-theme-button{
+    padding: 0 .5rem;
+    background: rebeccapurple;
+}
 .menu .action .fa-bars{
     display: none;
 }

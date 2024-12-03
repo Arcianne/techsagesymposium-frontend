@@ -20,6 +20,9 @@
 
     <!-- responsive style -->
     <link rel="stylesheet" href="css/media.css">
+
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 </head>
 <body>
     <!-- nav bar -->
@@ -117,7 +120,15 @@
                             <input id="speaker-name" type="text" name="speaker-name" placeholder="E.g. Juan Dela Cruz" required>
                         </div>
 
-                        
+                        <div class="file-input-container">
+                            <label for="event-image-input">Upload Event Cover</label>
+                            <input type="file" id="event-image-input" required>
+                        </div>
+        
+                        <div class="file-input-container">
+                            <label for="speaker-image-input">Upload Event Cover</label>
+                            <input type="file" id="speaker-image-input" required>
+                        </div>
                     </div>
 
                     <div class="registration-details">
@@ -153,17 +164,6 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="file-input">
-                    <label for="event-image-input" class="image-input">Upload Event Image</label>
-                    <input type="file" id="event-image-input" />
-                </div>
-
-                <div class="file-input">
-                    <label for="speaker-image-input" class="image-input">Upload Speaker Image</label>
-                <input type="file" id="speaker-image-input" />
-                </div>
-
                 <div class="buttons">
                     <button class="btn submit" type="submit">
                         Submit
