@@ -74,7 +74,7 @@
     <div id="event-registration-modal" class="ldcv">
         <div class="base">
             <div class="inner">
-                <h1 class="title" id="modal-title"></h1>
+                <h1 class="title" id="modal-title">Event Registration Form: Secure Your Spot Today!</h1>
                 <form>
                     <div class="registration">
                         <div>
@@ -95,7 +95,7 @@
                         <input id="event-id" type="text" name="event-id" style="display: none;">
                     </div>
                     <div class="button">
-                        <button class="btn" onclick="registerAttendee()">Register</button>
+                        <button class="btn">Register</button>
                     </div>
                 </form>
             </div>
@@ -109,18 +109,20 @@
                 <form>
                     <div class="event-banner">
                         <div>
-                            <label for="heading">Banner Heading: </label>
-                            <input id="heading" type="text" name="heading" placeholder="E.g Innovate Tech: Future Conversations" required>
+                            <label for="banner-heading">Banner Heading: </label>
+                            <input id="banner-heading" type="text" name="banner-heading" placeholder="E.g Innovate Tech: Future Conversations" required>
                         </div>
 
                         <div>
-                            <label for="promotional-text">Banner Promotional Text: </label>
-                            <textarea id="promotional-text" name="promotional-text" rows="3" cols="30" placeholder="E.g Join us for 'Innovate Tech: Future Conversations', where industry leaders share insights on the latest technological advancements and engage in thought-provoking discussions about the future of innovation!"></textarea>
+                            <label for="banner-promotional-text">Banner Promotional Text: </label>
+                            <textarea id="banner-promotional-text" name="banner-promotional-text" rows="3" cols="30" placeholder="E.g Join us for 'Innovate Tech: Future Conversations', where industry leaders share insights on the latest technological advancements and engage in thought-provoking discussions about the future of innovation!"></textarea>
                         </div>
+
+                        <input id="event-id" type="text" name="event-id" style="display: none;">
                     </div>
 
                     <div class="button">
-                        <button class="btn" onclick="navigateToEventBanner()" type="button">
+                        <button class="btn">
                             Done
                         </button>
                     </div>

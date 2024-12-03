@@ -16,7 +16,6 @@ function getEventDetails(id, title) {
     const modalTitle = document.getElementById("modal-title")
     
     eventIdInput.value = id
-    modalTitle.innerHTML = 'Register for the ' + title
 }
 
 const eventDetails = document.getElementById("event-details");
@@ -35,7 +34,7 @@ async function fetchEventById() {
                         <p>January 05, 2025 at 10:00 AM</p>
                         <div class="event-cta">
                             <button class="btn" onclick="eventRegistrationModal.toggle(); getEventDetails('${dataSource._id}', '${dataSource.title}')">Join Now!</button>
-                            <button class="btn" onclick="generateBannerModal.toggle()">Generate Banner</button>
+                            <button class="btn" onclick="generateBannerModal.toggle(); getEventDetails('${dataSource._id}', '${dataSource.title}')">Generate Banner</button>
                         </div>
                     </div>
                     <img src="${dataSource.images.event_cover}" alt="Event Cover">
@@ -67,11 +66,11 @@ async function fetchEventById() {
     }
 }
 
+const attendeeName = urlParams.get('attendee-name');
+const eventId = urlParams.get('event-id');
 async function registerAttendee() {
-    const attendeeName = urlParams.get('attendee-name');
     const attendeeEmail = urlParams.get('attendee-email');
     const attendeeContact = urlParams.get('attendee-contact');
-    const eventId = urlParams.get('event-id');
 
     const response = await axios.post(
         ENVIRONMENT.API_BASE_URL + '/api/v1/attendees',
@@ -83,27 +82,35 @@ async function registerAttendee() {
             is_pending: true
         }
     )
-
-    console.log({
-        attendee_name: attendeeName,
-        email: attendeeEmail,
-        contact_no: attendeeContact,
-        event_id: eventId,
-        is_pending: true
-    })
 }
 
-if(id){
-    fetchEventById()
+const bannerHeading = urlParams.get('banner-heading');
+async function createBanner() {
+    const bannerPromotionalText = urlParams.get('banner-promotional-text');
     
-} else{
+    const response = await axios.post(
+        ENVIRONMENT.API_BASE_URL + '/api/v1/banners',
+        {
+            banner_heading: bannerHeading,
+            banner_promotional_text: bannerPromotionalText,
+            event: eventId
+        }
+    )
+}
+
+if(attendeeName){
     registerAttendee()
     const htmlContent = `
-        <div class="registration-success">
+        <div class="registration-success" style="margin-bottom: 18rem;">
             <h1 id="">Thanks, ${urlParams.get('attendee-name')}</h1>
             <h1>Registration Successful 👏</h1>
             <p>Please wait a couple of days as we confirm your registration. Expect a call or email using the information you provided.</p>
         </div>
     `
     eventDetails.innerHTML = htmlContent;
+} else if(bannerHeading){
+    createBanner()
+    window.location.href = `event-banner.html?id=${eventId}`;
+}else{
+    fetchEventById()
 }

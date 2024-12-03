@@ -236,6 +236,23 @@
         grid-template-columns: 1fr;
     }
 
+    .blog-nav{
+        display: block;
+    }
+
+    .scroll-nav{
+        display: none;
+    }
+    
+    .blog-title img,
+    .blog-title-container{
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+
     /* Footer Media Queries */
     .footer-nav {
         flex-direction: column;

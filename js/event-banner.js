@@ -20,4 +20,21 @@ async function generateQRCode() {
     qrCode.src = imageUrl;
 }
 
+async function fetchBannerDetails() {
+    try {
+        const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/banners/event-id/" + id);
+        const dataSource = response.data.data;
+        const bannerDetails = document.getElementById("banner-details")
+        const htmlContent = `
+            <h1>${dataSource[0].banner_heading}</h1>
+            <p>${dataSource[0].banner_promotional_text}</p>
+        `
+
+        bannerDetails.innerHTML = htmlContent;
+    } catch (error) {
+        
+    }
+}
+
 generateQRCode()
+fetchBannerDetails()

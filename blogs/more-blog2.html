@@ -17,6 +17,9 @@
 
     <!-- page style -->
     <link rel="stylesheet" href="../css/pages/blogs.css">
+    
+    <!-- responsive styles -->
+    <link rel="stylesheet" href="../css/media.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -42,8 +45,25 @@
                     <a href="../set-event.html">
                         <button class="btn">Set Event</button>
                     </a>
+                    <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
                 </div>
             </div>
+        </nav>
+    </header>
+
+    <!-- mobile nav bar -->
+    <header class="mobile-menu" id="mobile-menu">
+        <nav class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../events.html">Events</a></li>
+                <li><a href="../about.html">About Us</a></li>
+                <li><a href="../blogs.html">Blogs</a></li>
+                <li><a href="../faqs.html">FAQ's</a></li>
+            </ul>
+            <a href="../set-event.html">
+                <button class="btn">Set Event</button>
+            </a>
         </nav>
     </header>
 
@@ -171,7 +191,9 @@
     </script>
 
     <!-- Dark & Light Mode Script -->
-    <script src="js/toggle-theme.js" type="module"></script>
-    
+    <script src="../js/toggle-theme.js" type="module"></script>
+
+    <!-- main script -->
+    <script src="../js/main.js"></script>
 </body>
 </html>
