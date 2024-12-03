@@ -2,6 +2,8 @@
 const eventRegistrationModal = new ldcover({ root: "#event-registration-modal" }); 
 const generateBannerModal = new ldcover({ root: "#generate-banner-modal" }); 
 
+const loader = document.getElementById("loader")
+
 // Get Params from URL
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -21,6 +23,9 @@ function getEventDetails(id, title) {
 const eventDetails = document.getElementById("event-details");
 async function fetchEventById() {
     try {
+        setTimeout(() => {
+        }, 1000);
+        loader.style.display = "block";
         const response = await axios.get(ENVIRONMENT.API_BASE_URL + "/api/v1/events/" + id);
         console.log(response.data.data);
         const dataSource = response.data.data
@@ -63,6 +68,8 @@ async function fetchEventById() {
 
         eventDetails.innerHTML = htmlContent;
         throw new Error("Failed to fetch event");
+    } finally {
+        loader.style.display = "none";
     }
 }
 
@@ -110,7 +117,9 @@ if(attendeeName){
     eventDetails.innerHTML = htmlContent;
 } else if(bannerHeading){
     createBanner()
-    window.location.href = `event-banner.html?id=${eventId}`;
+    setTimeout(() => {
+        window.location.href = `event-banner.html?id=${eventId}`;
+    }, 1000);
 }else{
     fetchEventById()
 }

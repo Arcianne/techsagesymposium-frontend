@@ -118,7 +118,6 @@ header.mobile-menu ul li a{
     color: var(--heading-color);
 }
 
-
 .btn {
     padding: 7px 25px;
     font-size: 1.25rem;
@@ -160,6 +159,17 @@ header.mobile-menu ul li a{
 
 main {
     margin-top: 5.25rem;
+}
+
+/*-----------------
+LOADER STYLES 
+-----------------*/
+.loader{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*-----------------
